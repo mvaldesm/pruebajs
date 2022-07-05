@@ -89,6 +89,8 @@ select {
     height: 30px;
     border: 0;
     background-color: white;
+    font-size: 16px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 .pais-seleccionado {
     display: none;
@@ -160,19 +162,20 @@ i {
     display: flex;
     flex-direction: row;
     width: 150px;
-    padding-top: 10px;
+    padding-top: 15px;
 }
 #radiobtn1 {
     /* padding-left: 20px; */
-    width: 40px;
+    width: 60px;
 }
 #radiobtn2 {
-    width: 40px;
+    width: 60px;
 }
 #resultado {
+    border-radius: 5px;
     background-color: white;
     margin-top: 10px;
-    padding: 10px;
+    padding: 15px;
 }
 
 @media (max-width: 800px) {

@@ -1,3 +1,41 @@
+// Alerta Bienvenida:
+function mensajeBienvenida(visitaAnterior) {
+  return Swal.fire({
+    icon: false,
+    title: '¡Nos alegra verte de vuelta!',
+    html: 'La última vez consultaste por ' + visitaAnterior.pais + ' ' + visitaAnterior.bandera + ', país que <b>' + visitaAnterior.permiso + ' requiere</b> de permiso previo o visa para ingresar a Chile.',
+    confirmButtonText:
+        '<i class="fa fa-thumbs-up"></i> ¡OK!',
+    confirmButtonColor: '#1155cc'
+  })
+}
+// Alerta Nivel Sanitario en Chile:
+const alertaNivel1 = () => {
+  Swal.fire({
+      title: '<strong>REQUISITOS SANITARIOS DE INGRESO A CHILE EN <u>ALERTA NIVEL 1</u>:</strong>',
+      icon: 'info',
+      width: '80%',
+      html:
+        '<p class="p-justify"><b>1) Declaración Jurada:</b> Todas las personas mayores de 6 años de edad deben completar la Declaración Jurada a través del sitio web <a href="https://www.c19.cl" target="_blank">c19.cl</a> hasta 48 horas antes de su embarque.</p>' +
+        '<p class="p-justify"><b>2) Cuarentena o aislamiento:</b> Sólo las personas que, al tiempo de ingresar a Chile correspondan a un caso confirmado de COVID-19, deberán cumplir con la medida de aislamiento por 7 días en una residencia sanitaria o en el lugar que la autoridad sanitaria determine.</p>' +
+        '<p class="p-justify"><b>3) Test PCR negativo antes de abordar:</b> Recomendado (Opcional).</p>' +
+        '<p class="p-justify"><b>4) Test PCR al ingresar a Chile:</b> Aleatorio.</p>' +
+        '<p class="p-justify"><b>5) Homologación de vacunas:</b> No es requisito para ingresar a Chile, pero es necesaria para acceder al <a href="https://www.bcn.cl/leychile/navegar?idNorma=1174714" target="_blank">Pase de Movilidad</a> dentro del país.</p>' +
+        '<p class="p-justify"><b>Fuente:</b> <a href="https://www.bcn.cl/leychile/navegar?idNorma=1174715&idParte=10326846" target="_blank">Resolución Exenta N° 495</a> del Ministerio de Salud que aprueba el <b>Plan Fronteras Protegidas</b>.</p>',
+      showCloseButton: true,
+      showCancelButton: false,
+      focusConfirm: false,
+      confirmButtonText:
+        '<i class="fa fa-thumbs-up"></i> ¡OK!',
+      confirmButtonAriaLabel: 'Thumbs up, great!',
+      confirmButtonColor: '#1155cc',
+      cancelButtonText:
+        '<i class="fa fa-thumbs-down"></i>',
+      cancelButtonAriaLabel: 'Thumbs down'
+    })
+
+}
+// Alerta permiso de reunificación familiar:
 function reunificacionFamiliar() {
     Swal.fire({
         title: '<strong>Permiso de reunificación familiar</strong>',
@@ -18,6 +56,7 @@ function reunificacionFamiliar() {
           cancelButtonAriaLabel: 'Thumbs down'
       })
 }
+// Alerta permiso para extranjeros que desarrollan actividades lícitas remuneradas:
 function actividadesRemuneradas() {
     Swal.fire({
         title: '<strong>Permiso para extranjeros que desarrollan actividades lícitas remuneradas</strong>',
@@ -38,6 +77,7 @@ function actividadesRemuneradas() {
           cancelButtonAriaLabel: 'Thumbs down'
       })
 }
+// Alerta permiso para extranjeros que busquen establecerse en el país con el objetivo de estudiar en establecimientos educacionales reconocidos por el Estado:
 function permisoEstudios() {
     Swal.fire({
         title: '<strong>Permiso para extranjeros que busquen establecerse en el país con el objetivo de estudiar en establecimientos educacionales reconocidos por el Estado</strong>',
@@ -58,6 +98,7 @@ function permisoEstudios() {
           cancelButtonAriaLabel: 'Thumbs down'
       })
 }
+// Alerta permiso para trabajadores de temporada
 function trabajadoresTemporada() {
     Swal.fire({
         title: '<strong>Permiso para trabajadores de temporada</strong>',
@@ -78,6 +119,7 @@ function trabajadoresTemporada() {
           cancelButtonAriaLabel: 'Thumbs down'
       })
 }
+// Alerta permiso para personas acogidas a acuerdos internacionales:
 function permisoAcuerdosInternacionales() {
     Swal.fire({
         title: '<strong>Permiso para personas acogidas a acuerdos internacionales</strong>',
@@ -98,6 +140,7 @@ function permisoAcuerdosInternacionales() {
           cancelButtonAriaLabel: 'Thumbs down'
       })
 }
+// Alerta permiso para religiosos de cultos reconocidos oficialmente:
 function permisoReligiosos() {
     Swal.fire({
         title: '<strong>Permiso para religiosos de cultos reconocidos oficialmente</strong>',
@@ -118,6 +161,7 @@ function permisoReligiosos() {
           cancelButtonAriaLabel: 'Thumbs down'
       })
 }
+// Alerta permiso para extranjeros que se encuentren bajo tratamientos médicos:
 function tratamientosMedicos() {
     Swal.fire({
         title: '<strong>Permiso para extranjeros que se encuentren bajo tratamientos médicos</strong>',
@@ -138,6 +182,7 @@ function tratamientosMedicos() {
           cancelButtonAriaLabel: 'Thumbs down'
       })  
 }
+// Alerta permiso para extranjeros jubilados
 function permisoJubilados() {
     Swal.fire({
         title: '<strong>Permiso para jubilados</strong>',
@@ -158,6 +203,7 @@ function permisoJubilados() {
           cancelButtonAriaLabel: 'Thumbs down'
       })  
 }
+// Alerta permiso para extranjeros rentistas
 function permisoRentistas() {
     Swal.fire({
         title: '<strong>Permiso para rentistas</strong>',
@@ -178,6 +224,7 @@ function permisoRentistas() {
           cancelButtonAriaLabel: 'Thumbs down'
       })  
 }
+// Alerta permiso para ex titulares de residencia definitiva
 function permisoExResidentes() {
     Swal.fire({
         title: '<strong>Permiso para ex titulares de residencia definitiva</strong>',
@@ -198,6 +245,7 @@ function permisoExResidentes() {
           cancelButtonAriaLabel: 'Thumbs down'
       })  
 }
+// Alerta permiso para inversionistas y personal relacionado:
 function permisoInversionistas(){
     Swal.fire({
         title: '<strong>Permiso para inversionistas y personal relacionado</strong>',
@@ -219,6 +267,7 @@ function permisoInversionistas(){
           cancelButtonAriaLabel: 'Thumbs down'
       }) 
 }
+// Alerta permiso de negocios de múltiple entrada
 function multipleEntrada() {
     Swal.fire({
         title: '<strong>Permiso de negocios de múltiple entrada</strong>',

@@ -1,5 +1,4 @@
-/*  paises: 
-    Array de objetos con la información de cada país (201) y si requiere o no 
+/*  Array de objetos con la información de cada país (201) y si requiere o no 
     permiso para ingresar a Chile
 */
 
@@ -2450,24 +2449,20 @@ const paises = [
     }
 ]
 
-/* Array con ID's de países acogidos al Convenio Alianza del Pacífico - Cap:
-19 (Bielorrusia), 25 (Botswana), 27 (Brunei), 29 (Burkina Faso), 33 (Camboya), 
-43 (Costa de Marfil), 46 (Cuba), 48 (Dominica), 64 (Gabón), 67 (Ghana), 
-86 (Islas Marshall), 87 (Islas Salomón), 96 (Kiribati), 99 (Laos), 110 (Madagascar), 
-112 (Malawi), 113 (Maldivas), 120 (Micronesia), 128 (Naurú), 139 (Palaos), 
-142 (Papúa Nueva Guinea), 157 (Samoa), 166 (Seychelles), 178 (Surinam), 
-183 (Timor Oriental), 190 (Tuvalu), 195 (Vanuatu), 200 (Zambia), 201 (Zimbabue): */
+/* Nacionales de los siguientes países que cuenten con residencia definitiva en alguno
+de los países del Convenio Alianza del Pacífico se encuentran exentos del requisito de
+permiso previo o visa - Cap:
+Bielorrusia: 19, Botsuana: 25, Brunei: 27, Burkina Faso: 29, Camboya: 33, 
+Costa de Marfil: 43, Cuba: 46, Dominica: 48, Gabón: 64, Ghana: 67, 
+Islas Marshall: 86, Islas Salomón: 87, Kiribati: 96, Laos: 99, Madagascar: 110, 
+Malawi: 112, Maldivas: 113, Micronesia: 120, Naurú: 128, Palaos: 139, 
+Papúa Nueva Guinea: 142, Samoa: 157, Seychelles: 166, Surinam: 178, 
+Timor Oriental: 183, Tuvalu: 190, Vanuatu: 195, Zambia: 200, Zimbabue: 201 */
 
 const paisesCap = [19, 25, 27, 29, 33, 43, 46, 48, 64, 67, 86, 87, 96, 99, 110, 112, 113, 120, 128, 139, 142, 157, 166, 178, 183, 190, 195, 200, 201]
 
 /* Países que pueden postular a un permiso de residencia temporal para personas acogidas a 
-Acuerdos Internacionales:
-
-Argentina: Acuerdo Mercusor.
-Bolivia: Acuerdo Mercusor.
-Brasil: Acuerdo Mercusor.
-
-*/
+Acuerdos Internacionales: */
 
 const acuerdosInternacionales = [
     {
