@@ -55,17 +55,23 @@ ul {
 }
 
 a {
-    text-decoration:underline;
+    text-decoration: underline;
     border-bottom: 1px blue;
     border-width: 1px;
-    /* box-shadow: inset 0 -4px 0 springgreen; */
     color: #1155cc;
     transition: background 0.1s cubic-bezier(.33,.66,.66,1);
-  }
+}
   
-  a:hover {
+a:hover {
     background: springgreen;
-  }
+}
+
+#immichile {
+    color: white;
+}
+#immichile:hover {
+    background: none;
+}
 
 .contenedor {
     display: flex;
@@ -153,7 +159,6 @@ img {
     display: flex;
     justify-content: space-evenly;
 }
-
 i {
     padding-top: 8px;
     color: white;
@@ -165,11 +170,10 @@ i {
     padding-top: 15px;
 }
 #radiobtn1 {
-    /* padding-left: 20px; */
-    width: 60px;
+    width: 50px;
 }
 #radiobtn2 {
-    width: 60px;
+    width: 50px;
 }
 #resultado {
     border-radius: 5px;
@@ -192,8 +196,6 @@ i {
         flex-direction: column;
         align-items: flex-start;
         text-align: justify;
-        /* border: 1px solid red; */
-        /* margin: 0 auto; */
         width: 90%;
         padding-top: 10px;
         padding-bottom: 20px;
@@ -215,8 +217,6 @@ i {
         flex-direction: column;
         align-items: flex-start;
         text-align: justify;
-        /* border: 1px solid red; */
-        /* margin: 0 auto; */
         width: 90%;
         padding-top: 10px;
         padding-bottom: 20px;
@@ -230,7 +230,7 @@ i {
         padding-left: 5px;
     }
     h2 {
-        font-size: 16px;
+        font-size: 20px;
         color: #2d3846;
         font-weight: 700;
     }
@@ -257,15 +257,12 @@ i {
         width: 100%;
         padding-top: 5px;
         padding-bottom: 0px;
-        /* border: 1px solid red; */
     }
     .container-descripcion {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         text-align: justify;
-        /* border: 1px solid red; */
-        /* margin: 0 auto; */
         width: 90%;
         padding-top: 5px;
         padding-bottom: 20px;
@@ -275,7 +272,6 @@ i {
         align-items: center;
         align-content: center;
         padding-top: 5px;
-        /* border: 1px solid red; */
         margin: 0 auto;
     }
 

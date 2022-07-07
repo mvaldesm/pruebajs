@@ -1,6 +1,6 @@
 /* 
 
-    Desafío - Optimizando el proyecto final
+    Desafío - Incorporando librerías
     Alumno: Marco Valdés
 
 */
@@ -65,7 +65,8 @@ if(requiereVisa === 'no' && buscarId.id !== 7) {
                                     <li>Costo del permiso de permanencia transitoria simple (US$): ${buscarId.costoSimple}.</li>
                                     <li>Vigencia del permiso de permanencia transitoria múltiple (días): ${buscarId.estadiaMultiple}.</li>
                                     <li>Costo del permiso de permanencia transitoria múltiple (US$): ${buscarId.costoMultiple}.</li>
-                                 </ul>`;
+                                 </ul>
+                                 <p class="p-justify"><strong>Fuente:</strong> <a href="https://www.diariooficial.interior.gob.cl/publicaciones/2020/05/14/42655/01/1760615.pdf" target="_blank">Resolución Exenta N° 1.542 de 2020 del Ministerio de Relaciones Exteriores de Chile - Fija cuadro de aranceles de visas y vistos de turismo otorgados en el extranjero</a>.</p>`;
 }
 // Si el país seleccionado requiere permiso previo pero se encuentra exento de visa previa si el extranjero cuenta con Residencia Definitiva en alguno de los países del Convenio Alianza Pacífico, imprime lo siguiente:
 else if(cap === true) {
@@ -79,7 +80,8 @@ else if(cap === true) {
                                     <li>Costo del permiso de permanencia transitoria simple (US$): ${buscarId.costoSimple}.</li>
                                     <li>Vigencia del permiso de permanencia transitoria múltiple (días): ${buscarId.estadiaMultiple}.</li>
                                     <li>Costo del permiso de permanencia transitoria múltiple (US$): ${buscarId.costoMultiple}.</li>
-                                 </ul>`;
+                                 </ul>
+                                 <p class="p-justify"><strong>Fuente:</strong> <a href="https://www.diariooficial.interior.gob.cl/publicaciones/2020/05/14/42655/01/1760615.pdf" target="_blank">Resolución Exenta N° 1.542 de 2020 del Ministerio de Relaciones Exteriores de Chile - Fija cuadro de aranceles de visas y vistos de turismo otorgados en el extranjero</a>.</p>`;
 }
 // Si se selecciona Antillas Holandesas imprime lo siguiente:
 else if(pais == 7) {
@@ -93,7 +95,8 @@ else if(pais == 7) {
                                     <li>Costo del permiso de permanencia transitoria simple (US$): ${buscarId.costoSimple}.</li>
                                     <li>Vigencia del permiso de permanencia transitoria múltiple (días): ${buscarId.estadiaMultiple}.</li>
                                     <li>Costo del permiso de permanencia transitoria múltiple (US$): ${buscarId.costoMultiple}.</li>
-                                 </ul>`;
+                                 </ul>
+                                 <p class="p-justify"><strong>Fuente:</strong> <a href="https://www.diariooficial.interior.gob.cl/publicaciones/2020/05/14/42655/01/1760615.pdf" target="_blank">Resolución Exenta N° 1.542 de 2020 del Ministerio de Relaciones Exteriores de Chile - Fija cuadro de aranceles de visas y vistos de turismo otorgados en el extranjero</a>.</p>`;
 }
 // Si el país es China (id: 37), imprime lo siguiente:
 else if(pais == 37) {
@@ -107,7 +110,8 @@ else if(pais == 37) {
                                     <li>Costo del permiso de permanencia transitoria simple (US$): ${buscarId.costoSimple}.</li>
                                     <li>Vigencia del permiso de permanencia transitoria múltiple (días): ${buscarId.estadiaMultiple}.</li>
                                     <li>Costo del permiso de permanencia transitoria múltiple (US$): ${buscarId.costoMultiple}.</li>
-                                 </ul>`;
+                                 </ul>
+                                 <p class="p-justify"><strong>Fuente:</strong> <a href="https://www.diariooficial.interior.gob.cl/publicaciones/2020/05/14/42655/01/1760615.pdf" target="_blank">Resolución Exenta N° 1.542 de 2020 del Ministerio de Relaciones Exteriores de Chile - Fija cuadro de aranceles de visas y vistos de turismo otorgados en el extranjero</a>.</p>`;
 }
 // Si el país es India (id: 79) o República Dominicana (id: 153), imprime lo siguiente:
 else if(pais == 79 || pais == 153) {
@@ -121,7 +125,8 @@ else if(pais == 79 || pais == 153) {
                                     <li>Costo del permiso de permanencia transitoria simple (US$): ${buscarId.costoSimple}.</li>
                                     <li>Vigencia del permiso de permanencia transitoria múltiple (US$): ${buscarId.estadiaMultiple}.</li>
                                     <li>Costo del permiso de permanencia transitoria múltiple (días): ${buscarId.costoMultiple}.</li>
-                                 </ul>`;
+                                 </ul>
+                                 <p class="p-justify"><strong>Fuente:</strong> <a href="https://www.diariooficial.interior.gob.cl/publicaciones/2020/05/14/42655/01/1760615.pdf" target="_blank">Resolución Exenta N° 1.542 de 2020 del Ministerio de Relaciones Exteriores de Chile - Fija cuadro de aranceles de visas y vistos de turismo otorgados en el extranjero</a>.</p>`;
 }
 // Si el país es Australia (id: 12), imprime lo siguiente:
 else if(pais == 12) {
@@ -135,7 +140,8 @@ else if(pais == 12) {
                                     <li>Costo del permiso de permanencia transitoria simple (US$): ${buscarId.costoSimple}.</li>
                                     <li>Vigencia del permiso de permanencia transitoria múltiple (US$): ${buscarId.estadiaMultiple}.</li>
                                     <li>Costo del permiso de permanencia transitoria múltiple (días): ${buscarId.costoMultiple}.</li>
-                                 </ul>`;
+                                 </ul>
+                                 <p class="p-justify"><strong>Fuente:</strong> <a href="https://www.diariooficial.interior.gob.cl/publicaciones/2020/05/14/42655/01/1760615.pdf" target="_blank">Resolución Exenta N° 1.542 de 2020 del Ministerio de Relaciones Exteriores de Chile - Fija cuadro de aranceles de visas y vistos de turismo otorgados en el extranjero</a>.</p>`;
 }
 // Si el país es Venezuela (id: 196)
 else if (pais == 196) {
@@ -149,7 +155,8 @@ else if (pais == 196) {
                                     <li>Costo del permiso de permanencia transitoria simple (US$): ${buscarId.costoSimple}.</li>
                                     <li>Vigencia del permiso de permanencia transitoria múltiple (días): ${buscarId.estadiaMultiple}.</li>
                                     <li>Costo del permiso de permanencia transitoria múltiple (US$): ${buscarId.costoMultiple}.</li>
-                                 </ul>`;
+                                 </ul>
+                                 <p class="p-justify"><strong>Fuente:</strong> <a href="https://www.diariooficial.interior.gob.cl/publicaciones/2020/05/14/42655/01/1760615.pdf" target="_blank">Resolución Exenta N° 1.542 de 2020 del Ministerio de Relaciones Exteriores de Chile - Fija cuadro de aranceles de visas y vistos de turismo otorgados en el extranjero</a>.</p>`;
 }
 // Si el país requiere de permiso previo o visa y no existen excepciones, imprime lo siguiente:
 else {
@@ -163,17 +170,20 @@ else {
                                     <li>Costo del permiso de permanencia transitoria simple (US$): ${buscarId.costoSimple}.</li>
                                     <li>Vigencia del permiso de permanencia transitoria múltiple (días): ${buscarId.estadiaMultiple}.</li>
                                     <li>Costo del permiso de permanencia transitoria múltiple (US$): ${buscarId.costoMultiple}.</li>
-                                 </ul>`;
+                                 </ul>
+                                 <p class="p-justify"><strong>Fuente:</strong> <a href="https://www.diariooficial.interior.gob.cl/publicaciones/2020/05/14/42655/01/1760615.pdf" target="_blank">Resolución Exenta N° 1.542 de 2020 del Ministerio de Relaciones Exteriores de Chile - Fija cuadro de aranceles de visas y vistos de turismo otorgados en el extranjero</a>.</p>`;
 }
 // Agregamos lo siguiente a cualquiera de las nacionalidades:
 descripcionPais.innerHTML += `<h4>Prorrogar un permiso de permanencia transitoria</h4>
-                              <p class="p-justify">El permiso de permanencia transitoria puede prorrogarse por un período adicional de hasta 90 días. Quienes deseen extender su estadía en Chile como titulares de un permiso de permanencia transitoria, deberán realizar el trámite de <strong>"Solicitud Prórroga de Permanencia Transitoria"</strong> a través del <a href="https://tramites.serviciomigraciones.cl" target="_blank">sitio web de trámites digitales del Servicio Nacional de Migraciones</a>, <strong>antes del vencimiento del permiso original</strong>.</p>
+                              <p class="p-justify">El permiso de permanencia transitoria puede prorrogarse por un período adicional de hasta 90 días.</p> 
+                              <p class="p-justify">Si deseas extender tu estadía en Chile como titular de un permiso de permanencia transitoria, debes realizar el trámite de "Solicitud Prórroga de Permanencia Transitoria" a través del <a href="https://tramites.serviciomigraciones.cl" target="_blank">sitio web de trámites digitales del Servicio Nacional de Migraciones</a>, <strong>antes del vencimiento del permiso original</strong>.</p>
                               <p class="p-justify">La prórroga del permiso de permanencia transitoria tiene un costo de US$100.</p>
                               <ul>
                                 <li><a href="https://serviciomigraciones.cl/permanenciatransitoria/prorrogadepermanenciatransitoria/" target="_blank">Requisitos para solicitar la prórroga de un Permiso de Permanencia Transitoria</a>.</li>
                                 </ul>
                               <h4>Trabajar con un permiso de permanencia transitoria</h4>
-                              <p class="p-justify">Quienes sean titulares de un Permiso de Permanencia Transitoria podrán solicitar un permiso de trabajo, ya sea antes o después de su ingreso a Chile. El permiso de trabajo podrá otorgarse siempre que se encuentre vigente el Permiso de Permanencia Transitoria.</p>
+                              <p class="p-justify">Quienes sean titulares de un Permiso de Permanencia Transitoria podrán solicitar un permiso de trabajo, ya sea antes o después de su ingreso a Chile.</p> 
+                              <p class="p-justify">El permiso de trabajo podrá otorgarse siempre que se encuentre vigente el Permiso de Permanencia Transitoria.</p>
                               <ul>
                                 <li><a href="https://serviciomigraciones.cl/permanenciatransitoria/permisodetrabajoconpermanenciatransitoria/" target="_blank">Requisitos para solicitar un permiso de trabajo como titular de un Permiso de Permanencia Transitoria</a>.</li>
                               </ul>
@@ -239,9 +249,9 @@ function conVinculo(){
     let resultadoRadio = document.getElementById("resultado");
     resultadoRadio.style.backgroundColor = "#ededed";
     resultadoRadio.innerHTML = `<strong>Podrás solicitar un permiso de residencia temporal desde el extranjero o dentro de Chile</strong>
-                                <p class="p-justify">Si tienes alguno de los vínculos mencionados anteriormente respecto de chileno o de residente definitivo en Chile, podrás postular a un permiso de residencia temporal desde el extranjero o dentro de Chile si te encuentras en el país con un permiso de permanencia transitoria vigente:</p>
+                                <p class="p-justify">Si tienes alguno de los vínculos mencionados anteriormente respecto de chileno o de residente definitivo en Chile, podrás postular a un permiso de residencia temporal ya sea desde el extranjero o dentro de Chile (si te encuentras en el país con un permiso de permanencia transitoria vigente):</p>
                                 <ul>
-                                <li>Si postulas desde el extranjero, podrás postular a cualquiera de las subcategorías de residencia temporal.</li>
+                                <li>Si postulas desde el extranjero, podrás optar a cualquiera de las subcategorías de residencia temporal.</li>
                                 <li>Si postulas dentro de Chile con un permiso de permanencia transitoria vigente, <strong>solo podrás postular a la subcategoría de residencia temporal por reunificación familiar</strong>.</li>
                                 </ul>
                                 <p class="p-justify">La postulación se realiza de manera digital a través del <a href="https://tramites.serviciomigraciones.cl" target="_blank">sitio web de trámites digitales del Servicio Nacional de Migraciones</a>.</p>
@@ -256,7 +266,7 @@ function sinVinculo(){
     let resultadoRadioBtn = document.getElementById("resultado");
     resultadoRadioBtn.style.backgroundColor = "#ededed";
     resultadoRadioBtn.innerHTML = `<strong>Deberás solicitar un permiso de residencia temporal desde el extranjero</strong>
-                                   <p class="p-justify">Si no cuentas con vínculo con chileno o con residente definitivo, tendrás que postular a alguna de las subcategorías residencia temporal desde el extranjero realizando el trámite de "Solicitud de Residencias Temporales para extranjeros fuera de Chile"</em>. Lo anterior, por aplicación de los artículos 58 y 69 de la Ley N° 21.325 (imposibilidad de postular dentro de Chile en caso de no poder acreditar vínculo con chileno o residente definitivo).</p>
+                                   <p class="p-justify">Si no cuentas con vínculo con chileno o con residente definitivo, tendrás que postular a alguna de las subcategorías residencia temporal desde el extranjero realizando el trámite de "Solicitud de Residencias Temporales para extranjeros fuera de Chile"</em>. Lo anterior, por aplicación de los <a href="https://www.bcn.cl/leychile/navegar?idNorma=1158549" target="_blank">artículos 58 y 69 de la Ley N° 21.325 </a> (imposibilidad de postular dentro de Chile en caso de no poder acreditar vínculo con chileno o residente definitivo o no encontrarse dentro de los otros casos de excepción).</p>
                                    <p class="p-justify">La postulación desde el extranjero se realiza de manera digital a través del <a href="https://tramites.serviciomigraciones.cl" target="_blank">sitio web de trámites digitales del Servicio Nacional de Migraciones</a>.</p> 
                                    <p class="p-justify">Para solicitar un permiso de residencia temporal debes crear una cuenta en el sitio web del Servicio Nacional de Migraciones. <a href="https://immichile.cl/como-crear-una-cuenta-en-el-sitio-web-de-tramites-digitales-del-servicio-nacional-de-migraciones/" target="_blank">Haz clic aquí</a> para conocer descubrir como hacerlo.</p>`
 }

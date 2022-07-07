@@ -1,7 +1,6 @@
 /*  Array de objetos con la información de cada país (201) y si requiere o no 
     permiso para ingresar a Chile
 */
-
 const paises = [
     {
         id: 1,
