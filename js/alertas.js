@@ -288,3 +288,72 @@ function multipleEntrada() {
           cancelButtonAriaLabel: 'Thumbs down'
       }) 
 }
+
+// Alerta precio dólar
+
+function consultaDolar() {
+
+  let diaConsulta = new Date();
+  let year = diaConsulta.getFullYear();
+  let month = diaConsulta.getMonth();
+  let day = diaConsulta.getDate();
+  let diaDelCeroalSeis = diaConsulta.getDay();
+  
+  // Si es sábado:
+  if(diaDelCeroalSeis == 6){
+      let viernes = day - 1;
+      fetch(`https://api.cmfchile.cl/api-sbifv3/recursos_api/dolar/${year}/${month}/dias/${viernes}?apikey=b0c68a9c609c9a24f820d844973a39058ea443a7&formato=json`)
+      .then(response => response.json())
+      .then(data => { 
+          const precio = data['Dolares'][0]['Valor'];
+          Swal.fire({
+            title: '1 dólar de los Estados Unidos de América equivale a ' + precio + ' pesos chilenos', 
+            confirmButtonColor: '#1155cc'
+          })
+      })
+      .catch(function(error) {
+        Swal.fire({
+          title: 'El precio del dólar no se encuentra disponible.', 
+          confirmButtonColor: '#1155cc'
+        })
+      });
+  } 
+  // Si es domingo:
+  else if(diaDelCeroalSeis == 0){
+      let viernes = day - 2;
+      fetch(`https://api.cmfchile.cl/api-sbifv3/recursos_api/dolar/${year}/${month}/dias/${viernes}?apikey=b0c68a9c609c9a24f820d844973a39058ea443a7&formato=json`)
+      .then(response => response.json())
+      .then(data => { 
+      const precio = data['Dolares'][0]['Valor'];
+      Swal.fire({
+        title: '1 dólar de los Estados Unidos de América equivale a ' + precio + ' pesos chilenos', 
+        confirmButtonColor: '#1155cc'
+      })
+    })
+      .catch(function(error) {
+        Swal.fire({
+          title: 'El precio del dólar no se encuentra disponible.', 
+          confirmButtonColor: '#1155cc'
+        })
+        });
+  } 
+  // Si es día de semana:
+  else {
+      fetch('https://api.sbif.cl/api-sbifv3/recursos_api/dolar?apikey=b0c68a9c609c9a24f820d844973a39058ea443a7&formato=json')
+      .then(response => response.json())
+      .then(data => {
+          const precio = data['Dolares'][0]['Valor'];
+          Swal.fire({
+            title: '1 dólar de los Estados Unidos de América equivale a ' + precio + ' pesos chilenos', 
+            confirmButtonColor: '#1155cc'
+          })
+      })
+      .catch(function(error) {
+        Swal.fire({
+          title: 'El precio del dólar no se encuentra disponible.', 
+          confirmButtonColor: '#1155cc'
+        })
+      });
+  
+  }
+}

@@ -34,7 +34,7 @@ paisSeleccionado.addEventListener('change', (evento) => {
 // Guardamos el valor de la opción seleccionada en la variable país:
 let pais = evento.target.value;
 // Si se elige la opción por defecto "Elige el país que emitió el pasaporte" escondemos todo lo que esté fuera del header:        
-const seleccionPais = (pais == 0) ? document.getElementById('pais-seleccionado').style.display = "none" : document.getElementById('pais-seleccionado').style.display = "flex";
+(pais == 0) ? document.getElementById('pais-seleccionado').style.display = "none" : document.getElementById('pais-seleccionado').style.display = "flex";
 // Busca el país seleccionado en el Array paises por el ID:
 const buscarId = paises.find(elpais => elpais.id == pais);
 // Guardamos nombre del país, su bandera y si requiere o no de permiso en un objeto:
@@ -66,6 +66,7 @@ if(requiereVisa === 'no' && buscarId.id !== 7) {
                                     <li>Vigencia del permiso de permanencia transitoria múltiple (días): ${buscarId.estadiaMultiple}.</li>
                                     <li>Costo del permiso de permanencia transitoria múltiple (US$): ${buscarId.costoMultiple}.</li>
                                  </ul>
+                                 <p class="p-justify"><a href="#" onclick="consultaDolar()">¿A cuántos pesos chilenos equivale un dólar?</a></p>
                                  <p class="p-justify"><strong>Fuente:</strong> <a href="https://www.diariooficial.interior.gob.cl/publicaciones/2020/05/14/42655/01/1760615.pdf" target="_blank">Resolución Exenta N° 1.542 de 2020 del Ministerio de Relaciones Exteriores de Chile - Fija cuadro de aranceles de visas y vistos de turismo otorgados en el extranjero</a>.</p>`;
 }
 // Si el país seleccionado requiere permiso previo pero se encuentra exento de visa previa si el extranjero cuenta con Residencia Definitiva en alguno de los países del Convenio Alianza Pacífico, imprime lo siguiente:
@@ -81,6 +82,7 @@ else if(cap === true) {
                                     <li>Vigencia del permiso de permanencia transitoria múltiple (días): ${buscarId.estadiaMultiple}.</li>
                                     <li>Costo del permiso de permanencia transitoria múltiple (US$): ${buscarId.costoMultiple}.</li>
                                  </ul>
+                                 <p class="p-justify"><a href="#" onclick="consultaDolar()">¿A cuántos pesos chilenos equivale un dólar?</a></p>
                                  <p class="p-justify"><strong>Fuente:</strong> <a href="https://www.diariooficial.interior.gob.cl/publicaciones/2020/05/14/42655/01/1760615.pdf" target="_blank">Resolución Exenta N° 1.542 de 2020 del Ministerio de Relaciones Exteriores de Chile - Fija cuadro de aranceles de visas y vistos de turismo otorgados en el extranjero</a>.</p>`;
 }
 // Si se selecciona Antillas Holandesas imprime lo siguiente:
@@ -96,6 +98,7 @@ else if(pais == 7) {
                                     <li>Vigencia del permiso de permanencia transitoria múltiple (días): ${buscarId.estadiaMultiple}.</li>
                                     <li>Costo del permiso de permanencia transitoria múltiple (US$): ${buscarId.costoMultiple}.</li>
                                  </ul>
+                                 <p class="p-justify"><a href="#" onclick="consultaDolar()">¿A cuántos pesos chilenos equivale un dólar?</a></p>
                                  <p class="p-justify"><strong>Fuente:</strong> <a href="https://www.diariooficial.interior.gob.cl/publicaciones/2020/05/14/42655/01/1760615.pdf" target="_blank">Resolución Exenta N° 1.542 de 2020 del Ministerio de Relaciones Exteriores de Chile - Fija cuadro de aranceles de visas y vistos de turismo otorgados en el extranjero</a>.</p>`;
 }
 // Si el país es China (id: 37), imprime lo siguiente:
@@ -111,6 +114,7 @@ else if(pais == 37) {
                                     <li>Vigencia del permiso de permanencia transitoria múltiple (días): ${buscarId.estadiaMultiple}.</li>
                                     <li>Costo del permiso de permanencia transitoria múltiple (US$): ${buscarId.costoMultiple}.</li>
                                  </ul>
+                                 <p class="p-justify"><a href="#" onclick="consultaDolar()">¿A cuántos pesos chilenos equivale un dólar?</a></p>
                                  <p class="p-justify"><strong>Fuente:</strong> <a href="https://www.diariooficial.interior.gob.cl/publicaciones/2020/05/14/42655/01/1760615.pdf" target="_blank">Resolución Exenta N° 1.542 de 2020 del Ministerio de Relaciones Exteriores de Chile - Fija cuadro de aranceles de visas y vistos de turismo otorgados en el extranjero</a>.</p>`;
 }
 // Si el país es India (id: 79) o República Dominicana (id: 153), imprime lo siguiente:
@@ -126,6 +130,7 @@ else if(pais == 79 || pais == 153) {
                                     <li>Vigencia del permiso de permanencia transitoria múltiple (US$): ${buscarId.estadiaMultiple}.</li>
                                     <li>Costo del permiso de permanencia transitoria múltiple (días): ${buscarId.costoMultiple}.</li>
                                  </ul>
+                                 <p class="p-justify"><a href="#" onclick="consultaDolar()">¿A cuántos pesos chilenos equivale un dólar?</a></p>
                                  <p class="p-justify"><strong>Fuente:</strong> <a href="https://www.diariooficial.interior.gob.cl/publicaciones/2020/05/14/42655/01/1760615.pdf" target="_blank">Resolución Exenta N° 1.542 de 2020 del Ministerio de Relaciones Exteriores de Chile - Fija cuadro de aranceles de visas y vistos de turismo otorgados en el extranjero</a>.</p>`;
 }
 // Si el país es Australia (id: 12), imprime lo siguiente:
@@ -141,11 +146,12 @@ else if(pais == 12) {
                                     <li>Vigencia del permiso de permanencia transitoria múltiple (US$): ${buscarId.estadiaMultiple}.</li>
                                     <li>Costo del permiso de permanencia transitoria múltiple (días): ${buscarId.costoMultiple}.</li>
                                  </ul>
+                                 <p class="p-justify"><a href="#" onclick="consultaDolar()">¿A cuántos pesos chilenos equivale un dólar?</a></p>
                                  <p class="p-justify"><strong>Fuente:</strong> <a href="https://www.diariooficial.interior.gob.cl/publicaciones/2020/05/14/42655/01/1760615.pdf" target="_blank">Resolución Exenta N° 1.542 de 2020 del Ministerio de Relaciones Exteriores de Chile - Fija cuadro de aranceles de visas y vistos de turismo otorgados en el extranjero</a>.</p>`;
 }
 // Si el país es Venezuela (id: 196)
 else if (pais == 196) {
-    descripcionPais.innerHTML = `<p class="p-justify">Si deseas viajar a Chile con pasaporte de ${buscarId.pais} <strong>requerirás</strong> de autorización previa o visa para ingresar al país, salvo que seas titular de Residencia Definitiva vigente en Argentina, en cuyo caso estarás exento del requisito de autorización previa o visa.</p>
+    descripcionPais.innerHTML = `<p class="p-justify">Si deseas viajar a Chile con pasaporte de ${buscarId.pais} <strong>requerirás</strong> de autorización previa o visa para ingresar al país, salvo que seas titular de Residencia Definitiva vigente en Argentina (<a href="https://www.bcn.cl/leychile/navegar?i=1078582&t=0" target="_blank">Decreto Supremo N° 39/2015</a>), en cuyo caso estarás exento del requisito de autorización previa o visa.</p>
                                  <p class="p-justify"><a onclick="alertaNivel1()" href="#">Haz clic aquí</a> para conocer los requisitos sanitarios de ingreso a Chile <em>(Plan Fronteras Protegidas)</em>.</p>
                                  <h3>TURISMO</h3>
                                  <p class="p-justify">Si viajas a Chile con fines de recreo o turismo <em>(sin ánimo de residencia)</em>, y no eres titular de Residencia Definitiva vigente en Argentina, tendrás que solicitar un <strong>Permiso de Permanencia Transitoria</strong> a través del <a href="https://tramites.minrel.gov.cl/Solicitudes/visa.aspx" target="_blank">sitio web de Trámites Consulares del Ministerio de Relaciones Exteriores de Chile</a>.</p>
@@ -156,6 +162,7 @@ else if (pais == 196) {
                                     <li>Vigencia del permiso de permanencia transitoria múltiple (días): ${buscarId.estadiaMultiple}.</li>
                                     <li>Costo del permiso de permanencia transitoria múltiple (US$): ${buscarId.costoMultiple}.</li>
                                  </ul>
+                                 <p class="p-justify"><a href="#" onclick="consultaDolar()">¿A cuántos pesos chilenos equivale un dólar?</a></p>
                                  <p class="p-justify"><strong>Fuente:</strong> <a href="https://www.diariooficial.interior.gob.cl/publicaciones/2020/05/14/42655/01/1760615.pdf" target="_blank">Resolución Exenta N° 1.542 de 2020 del Ministerio de Relaciones Exteriores de Chile - Fija cuadro de aranceles de visas y vistos de turismo otorgados en el extranjero</a>.</p>`;
 }
 // Si el país requiere de permiso previo o visa y no existen excepciones, imprime lo siguiente:
@@ -171,6 +178,7 @@ else {
                                     <li>Vigencia del permiso de permanencia transitoria múltiple (días): ${buscarId.estadiaMultiple}.</li>
                                     <li>Costo del permiso de permanencia transitoria múltiple (US$): ${buscarId.costoMultiple}.</li>
                                  </ul>
+                                 <p class="p-justify"><a href="#" onclick="consultaDolar()">¿A cuántos pesos chilenos equivale un dólar?</a></p>
                                  <p class="p-justify"><strong>Fuente:</strong> <a href="https://www.diariooficial.interior.gob.cl/publicaciones/2020/05/14/42655/01/1760615.pdf" target="_blank">Resolución Exenta N° 1.542 de 2020 del Ministerio de Relaciones Exteriores de Chile - Fija cuadro de aranceles de visas y vistos de turismo otorgados en el extranjero</a>.</p>`;
 }
 // Agregamos lo siguiente a cualquiera de las nacionalidades:
@@ -276,7 +284,7 @@ const precioResidencia = paises.map(function(elprecio) {
 })
 console.log('El costo del permiso de residencia más caro asciende a $' + Math.max(...precioResidencia) + ' dólares de los Estados Unidos.');
 // Desestructuración:
-for(const {pais: p, emoji: e} of paises)
+for(const {pais: pais, emoji: emoji} of paises)
 {
-    console.log('Pais: ' + p + ' || Bandera: ' + e);
+    console.log('Pais: ' + pais + ' || Bandera: ' + emoji);
 }
